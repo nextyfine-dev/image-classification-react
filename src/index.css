@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50;
+    @apply min-h-screen;
+  }
+  ::selection {
+    @apply text-white bg-blue-100;
+  }
+}
+
+.text-glow {
+  text-shadow: 0 0 100px #001aff, 0 0 200px #6087f3, 0 0 50px #6087f3;
+}
