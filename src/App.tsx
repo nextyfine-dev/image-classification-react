@@ -86,8 +86,6 @@ function App() {
         const nsfwPredictions = await nsfwModel.classify(imageElement);
 
         if (isValidArray(predictions) && isValidArray(nsfwPredictions)) {
-          console.log("nsfwPredictions :>> ", nsfwPredictions);
-
           setPredictions(predictions);
           setNsfwPredictions(nsfwPredictions);
         }
